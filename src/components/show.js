@@ -80,10 +80,10 @@ class Show extends React.Component{
                 <dl>
                 <dt>Name:</dt>
                   <dd>{this.state.booking.name}</dd>
-                  <dt>Status:</dt>
-                  <dd>{this.state.booking.status}</dd>
                   <dt>Room No:</dt>
                   <dd>{this.state.booking.room}</dd>
+                  <dt>Status:</dt>
+                  <dd>{this.state.booking.status}</dd>
                   <dt>From:</dt>
                   <dd>{this.state.booking.from}</dd>
                   <dt>To:</dt>

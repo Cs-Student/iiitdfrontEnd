@@ -14,7 +14,7 @@ class Edit extends Component {
       key: '',
       room: '',
       name:'',
-      status:'',
+      status:'Requsted',
       from:new Date(),
       to:new Date()
     };
@@ -90,7 +90,7 @@ class Edit extends Component {
       key: '',
       room: '',
       name:'',
-      status:'',
+      status:'Requsted',
       from:new Date(),
       to:new Date()
       });
@@ -115,9 +115,14 @@ class Edit extends Component {
           </div>
           <div class="panel-body">
             <form onSubmit={this.onSubmit}>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" name="name" value={this.state.name} onChange={this.onChange} placeholder="Name" />
+              </div>  
+
               <div class="form-group">
                 <label for="room">Room:</label>
-                <input type="text" class="form-control" name="room" value={this.state.room}   placeholder="Room" />
+                <input type="text" class="form-control" name="room" value={this.state.room} onChange={this.onChange}  placeholder="Room" />
               </div>
 
               <div class="form-group">
@@ -130,10 +135,7 @@ class Edit extends Component {
               </select>
               </div>
 
-              <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" class="form-control" name="name" value={this.state.name} onChange={this.onChange} placeholder="Name" />
-              </div>
+  
 
               <div className="form-group">
                 <label htmlFor="from">From: </label>

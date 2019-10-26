@@ -13,7 +13,7 @@ class Create extends Component {
     this.state = {
       room: '',
       name:'',
-      status:'',
+      status:'Requsted',
       from:new Date(),
       to:new Date()
     };
@@ -58,7 +58,7 @@ class Create extends Component {
       this.setState({
         room: '',
       name:'',
-      status:'',
+      status:'Requsted',
       from:new Date(),
       to:new Date()
       });
